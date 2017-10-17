@@ -1,0 +1,56 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      History Detail
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <h4 class="exchange-title">BTC - Coinbase</h4>
+    <table class="table">
+      <tr>
+        <td>Day's High</td>
+        <td>{{ cbGetDayHighBtcUsdRecords }}</td>
+      </tr>
+      <tr>
+        <td>Day's Low</td>
+        <td>{{ cbGetDayLowBtcUsdRecords }}</td>
+      </tr>
+    </table>
+    <h4 class="exchange-title">BTC - CoinDesk</h4>
+    <table class="table">
+      <tr>
+        <td>Day's High</td>
+        <td>{{ cdGetDayHighBtcUsdRecords }}</td>
+      </tr>
+      <tr>
+        <td>Day's Low</td>
+        <td>{{ cdGetDayLowBtcUsdRecords }}</td>
+      </tr>
+    </table>
+    <h4 class="exchange-title">XRP - BTCXIndia</h4>
+    <table class="table">
+      <tr>
+        <td>Day's High</td>
+        <td>{{ btcxGetDayHighXrpInrRecords }}</td>
+      </tr>
+      <tr>
+        <td>Day's Low</td>
+        <td>{{ btcxGetDayLowXrpInrRecords }}</td>
+      </tr>
+    </table>
+    <h4 class="exchange-title">XRP - ZEBPAY</h4>
+    <table class="table">
+      <tr>
+        <td>Day's High</td>
+        <td>{{ zpGetDayHighXrpInrRecords }}</td>
+      </tr>
+      <tr>
+        <td>Day's Low</td>
+        <td>{{ zpGetDayLowXrpInrRecords }}</td>
+      </tr>
+    </table>
+  </ion-list>
+</ion-content>

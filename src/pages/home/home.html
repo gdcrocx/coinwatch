@@ -1,0 +1,71 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-item>
+    <ion-icon></ion-icon><span class="currency-description">BTC - USD</span>
+    <ion-item>
+      <span class="exchange-title">Coinbase</span>
+      <ion-badge class="credits">Powered by Coinbase</ion-badge>
+      <ion-badge>{{ cbBTCUSDBuyPriceValue }} (Buy)</ion-badge>
+      <ion-badge>{{ cbBTCUSDSellPriceValue }} (Sell)</ion-badge>
+    </ion-item>
+    <ion-item>
+      <span class="exchange-title">CoinDesk</span>
+      <ion-badge class="credits">Powered by CoinDesk</ion-badge>
+      <ion-badge>{{ cdBTCUSDCurrentPriceValue }} (Current Price)</ion-badge>
+    </ion-item>
+  </ion-item>
+
+  <ion-item>
+    <ion-icon></ion-icon><span class="currency-description">BTC - INR</span>
+    <ion-item>
+      <span class="exchange-title">CoinDesk</span>
+      <ion-badge class="credits">Powered by CoinDesk</ion-badge>
+      <ion-badge>{{ cdBTCINRCurrentPriceValue }} (Current Price)</ion-badge>
+    </ion-item>
+    <ion-item>
+      <span class="exchange-title">Zebpay</span>
+      <ion-badge class="credits">Powered by Zebpay</ion-badge>
+      <ion-badge>{{ zpBTCINRBuyPriceValue }} (Buy)</ion-badge>
+      <ion-badge>{{ zpBTCINRSellPriceValue }} (Sell)</ion-badge>
+    </ion-item>
+  </ion-item>
+
+  <ion-item>
+    <ion-icon></ion-icon><span class="currency-description">ETH - USD</span>
+    <ion-item>
+      <span class="exchange-title">Coinbase</span>
+      <ion-badge class="credits">Powered by Coinbase</ion-badge>
+      <ion-badge>{{ cbETHUSDBuyPriceValue }} (Buy)</ion-badge>
+      <ion-badge>{{ cbETHUSDSellPriceValue }} (Sell)</ion-badge>
+    </ion-item>
+    <ion-item>
+      <span class="exchange-title">CoinDesk</span>
+      <ion-badge class="credits">Powered by CoinDesk</ion-badge>
+      <ion-badge>{{ cdETHUSDCurrentPriceValue }} (Current Price)</ion-badge>
+    </ion-item>
+  </ion-item>
+
+  <ion-item>
+    <ion-icon></ion-icon><span class="currency-description">LTC - USD</span>
+    <ion-item>
+      <span class="exchange-title">Coinbase</span>
+      <ion-badge class="credits">Powered by Coinbase</ion-badge>
+      <ion-badge>{{ cbLTCUSDBuyPriceValue }} (Buy)</ion-badge>
+      <ion-badge>{{ cbLTCUSDSellPriceValue }} (Sell)</ion-badge>
+    </ion-item>
+  </ion-item>
+
+  <ion-item>
+    <ion-icon></ion-icon><span class="currency-description">XRP - INR</span>
+    <ion-item>
+      <span class="exchange-title">btcxIndia</span>
+      <ion-badge class="credits">Powered by btcxIndia</ion-badge>
+      <ion-badge>{{ btcxXRPINRCurrentPriceValue }} (Current Price)</ion-badge>
+    </ion-item>
+  </ion-item>
+</ion-content>

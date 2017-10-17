@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Metrics
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list id="dataDayView" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <ion-item class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+      <h4 class="exchange-title">BTC (USD) - Coinbase</h4>
+      <canvas id="cbDayLine" class="chart chart-bar" ng-show="cbDayGraphData != 'No Data'" chart-data="cbDayGraphData" chart-labels="cbDayGraphLabel"></canvas>
+    </ion-item>
+    <ion-item class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+      <h4 class="exchange-title">BTC (USD) - CoinDesk</h4>
+      <canvas id="cdDayLine" class="chart chart-bar" ng-show="cdDayGraphData != 'No Data'" chart-data="cdDayGraphData" chart-labels="cdDayGraphLabel"></canvas>
+    </ion-item>
+    <ion-item class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+      <h4 class="exchange-title">BTC (INR) - ZEBPAY</h4>
+      <canvas id="zpDayLine" class="chart chart-line" ng-show="zpDayGraphData != 'No Data'" chart-data="zpDayGraphData" chart-labels="zpDayGraphLabel"></canvas>
+    </ion-item>
+    <ion-item class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+      <h4 class="exchange-title">XRP (INR) - BTCXIndia</h4>
+      <canvas id="btcxDayLine" class="chart chart-line" ng-show="btcxDayGraphData != 'No Data'" chart-data="btcxDayGraphData" chart-labels="btcxDayGraphLabel"></canvas>
+    </ion-item>    
+  </ion-list>
+</ion-content>
